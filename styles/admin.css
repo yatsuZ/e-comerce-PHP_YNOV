@@ -1,0 +1,42 @@
+.product{
+    padding: 20px;
+    padding-top: 0px;
+    color: white;
+}
+
+.head, .head_ {
+    background-color: rgba(0,0,0,0.1);
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .stock:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.stock {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.product .head input, .product .head button{
+    width: 100%;
+}
+
+.product .head button{
+    padding: 10px;
+    margin-top: 10px;
+}
+.product .head>div{
+    display: flex;
+    align-items: center;
+}
+
+.product .head>div span{
+    width: 75%;
+}

@@ -1,0 +1,4 @@
+D'ici lundi :
+- manager le système d'adresses
+- manager le système d'historique d'achats
+- manager la page du produit au système

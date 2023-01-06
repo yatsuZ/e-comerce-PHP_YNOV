@@ -1,0 +1,4 @@
+Administration data senior : Etia
+Administration data junior : Zaoui
+Développement d’interface Web :
+    - Fullstack : Chad

@@ -1,0 +1,276 @@
+/******************************Couleurs de fond du site*********************************/
+
+html {
+    background-color:  #242323;
+    color:             white;
+  }
+
+  [article]{
+    display: flex;
+  }
+  
+  
+  /*******************Tous les éléments concernant le ccôté gauche de la page*************************/
+  /* .Left {
+    position: absolute;
+    left:     -600px;
+  } */
+  
+  /************************* Les images (pour faire la galerie) *****************************/
+  
+  *{
+    box-sizing:border-box
+  }
+  
+  
+  img{
+  
+    max-width: 100%;
+    max-height :100%;
+  
+  }
+  
+  
+  .target{
+  
+    display: none
+  
+  }
+  
+  
+  /* englobe le slider */
+  
+  .cadre_diapo{
+  
+    max-width: 35%;
+    margin: 2% auto;
+    overflow: hidden;
+    
+  }
+  
+  .interieur_diapo{
+      
+    display: flex;
+    width: 300%;
+    transition: transform .10s ease-in-out
+      
+  }
+  
+  
+  .description{
+  
+    position: sticky;
+  
+  }
+  
+  
+  #img_3:target ~ .cadre_diapo .interieur_diapo{
+  
+    transform:translatex(-50%)
+  
+  }/*image 3*/
+  
+  #img_4:target ~ .cadre_diapo .interieur_diapo{
+  
+    transform:translatex(-75%)
+  
+  }/*image 4*/
+  
+  
+  
+  /*navigation avec images miniatures*/
+  .navigation_diapo{
+    
+    display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+      
+  }
+  
+  .navigation_diapo li {
+    
+    padding: .5rem;
+    
+  }
+  
+  .navigation_diapo img{
+  
+    border: 3px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+  
+    
+  }
+    
+    
+    @media (min-width:31.25rem){
+      
+      .description span{
+        
+        font-size: initial
+      
+      }
+  }
+    
+  /*******************************Côté droit de la page**************************/
+  
+  /* .Right {
+  
+    position: absolute;
+    right: 300px;
+  } */
+  
+  
+  /*******************************Voir les autres modèles en images****************************/
+  
+  
+  .zoom {
+    height:400px;
+  }
+  
+  .zoom p {
+    text-align:center;
+  }
+  
+  .zoom img {
+    width:100px;
+    height:167px;
+  }
+  
+  .zoom img:hover {
+    width:200px;
+    height:300px;
+  }
+  
+  /************************************Position des photos sur la pages **************************/
+  
+  #A {
+  
+    position: absolute;
+    top: 200px;
+  }
+  
+  
+  #B {
+  
+    position: absolute;
+    top: 200px;
+    right: -50px;
+  }
+  
+  
+  
+  #C {
+  
+    position: absolute;
+    top: 200px;
+    right: -251px;
+  }
+  
+  /*******************************************************************************/
+  
+  
+  #Livraisons {
+    
+    font-size: 1.3rem;
+    padding:   10px;
+    
+    border-style: solid;
+    border-color: grey;
+    padding-left: 10px;
+    padding-right: 290px;
+  }
+  
+  
+  /**********************************Panier****************************/
+  
+  
+  .Panier {
+  
+  
+    position: absolute;
+    display:  block;
+    top:      550px;
+  
+    border: 0;
+    line-height: 2.5;
+    padding: 0 150px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    background-color: black;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  
+  }
+  
+  .Panier:hover {
+      background-color: grey;
+  }
+  
+  
+  /**********************************Choix de la taille*****************************/
+  
+  .Size{
+  
+    position: absolute;
+      display:  block;
+  
+      top:      650px;
+  
+  
+  }
+  
+  
+  label {
+  
+      font-size: 1.2rem;
+      padding-right: 10px;
+  }
+  
+  select {
+      font-size: 1rem;
+      padding: 2px 5px;
+  }
+  
+  
+  /*********************************Positions des infos**************************/
+  #Infos{
+      position: absolute;
+      display:  block;
+  
+      top:      700px;
+  
+  }
+  
+  /*********************************Dimensions des boutons infos **************************/
+  
+  #Details_1{
+  
+    padding:    10px 170px;
+    margin:     5px;
+    font-size: 1.2rem;
+    background-color:   #242323; ;
+  }
+  
+  
+  #Details_2{
+  
+    padding:    10px 215px;
+    margin:     5px;
+    font-size: 1.2rem;
+    background-color:   #242323; ;
+  }
+  
+  #Details_3{
+  
+    padding:    10px 190px;
+    margin:     5px;
+    font-size: 1.2rem;
+    background-color:   #242323; ;
+  
+  }
+  
+  
+  /*******************************************************************************/
